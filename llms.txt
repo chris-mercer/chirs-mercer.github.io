@@ -1,17 +1,37 @@
 # Christopher Mercer
 
-> Systems engineer at the confluence of finance, blockchain, and AI.
+> Systems architect designing and shipping blockchain protocol infrastructure, governance systems, and large-scale data pipelines.
 
 ## About
 
-Christopher Mercer is a systems engineer building protocol infrastructure and AI-augmented development workflows. He merges a financial background with distributed systems engineering, focusing on governance systems, DeFi architecture, and agentic integration.
+Christopher Mercer is a systems architect who designs complex infrastructure across blockchain protocols, governance frameworks, DeFi, and large-scale data systems. He works across the full vertical — from consensus-layer protocol design to smart contracts, interfaces, and data pipelines — designing and personally shipping end to end. Traditional finance background with a systems engineering discipline applied to everything.
+
+## What He Designs & Builds
+
+### Protocol Architecture
+Designs and implements consensus-layer upgrades across multiple blockchain clients written in different languages (Go, JVM/Scala, Java). Integrates execution-layer proposals spanning dynamic fee markets, account abstraction, and transient storage. Coordinates cross-client validation on live testnets.
+
+### Governance & Smart Contract Systems
+Architects governance systems from soulbound NFT-based voting to DAO frameworks to prediction-market futarchy using logarithmic scoring AMMs. Designs name service registries, DEX infrastructure, and token launch platforms. Rigorous formal testing — fuzz, invariant, security proofs.
+
+### Full-Stack Web3 Interfaces
+Designs contracts and builds the interfaces. TypeScript, React, wagmi/viem, WebGL, on-chain analytics dashboards. Single architect across the entire stack — no handoff between contract design and user experience.
+
+### Data Architecture
+Designs pipelines processing over a billion records. Performance-engineered storage with order-of-magnitude throughput improvements. Multi-pass LLM enrichment. Full-text search infrastructure across millions of documents.
+
+## How He Works
+
+Built AI-augmented development infrastructure — custom agentic workflows with model routing by task complexity, automated quality enforcement, zero-marginal-cost mechanical automation. Systems architecture applied to the development process itself.
 
 ## Focus Areas
 
-- Protocol Infrastructure
-- DeFi Architecture
-- Agentic Workflows
-- Open-Source Tooling
+- Protocol Architecture
+- Smart Contract Systems
+- Governance Design
+- Full-Stack Web3
+- Data Infrastructure
+- AI-Augmented Development
 
 ## Links
 
