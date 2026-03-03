@@ -1,37 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Christopher Mercer — Systems engineer at the confluence of finance, blockchain, and AI.">
-    <title>Christopher Mercer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Christopher Mercer — Systems engineer at the confluence of finance, blockchain, and AI.">
+  <title>Christopher Mercer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #f0eeeb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 560px;
+      width: 100%;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+    }
+
+    .name {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #1c1917;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.25rem;
+    }
+
+    .role {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #a8a29e;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.5rem;
+    }
+
+    .bio {
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      color: #57534e;
+      margin-bottom: 1.5rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .tag {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: #44403c;
+      background-color: #f5f5f4;
+      padding: 0.375rem 0.875rem;
+      border-radius: 100px;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .links a {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #1c1917;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .links a:hover { color: #78716c; }
+
+    .sep { color: #d6d3d1; font-size: 0.875rem; }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #a8a29e;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 1rem 0.75rem; }
+      .card { padding: 2rem 1.5rem; }
+      .avatar { width: 120px; height: 120px; }
+      .name { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-    <main class="card">
-        <img src="profile.jpeg" alt="Christopher Mercer" class="avatar">
-        <h1 class="name">Christopher Mercer</h1>
-        <p class="role">Systems Engineer · Blockchain · AI</p>
-        <p class="bio">Systems thinker working at the confluence of finance, blockchain, and agentic integration. I build protocol infrastructure and AI-augmented development workflows — merging a financial background with distributed systems engineering.</p>
-        <div class="tags">
-            <span class="tag">Protocol Infrastructure</span>
-            <span class="tag">DeFi Architecture</span>
-            <span class="tag">Agentic Workflows</span>
-            <span class="tag">Open-Source Tooling</span>
-        </div>
-        <div class="links">
-            <a href="mailto:contact@whiteb0x.com">Email</a>
-            <span class="sep">&middot;</span>
-            <a href="https://github.com/chris-mercer" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <span class="sep">&middot;</span>
-            <a href="https://linkedin.com/in/c-mercer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <span class="sep">&middot;</span>
-            <a href="https://whiteb0x.com" target="_blank" rel="noopener noreferrer">whiteb0x</a>
-        </div>
-    </main>
-    <footer class="footer">&copy; 2026 Christopher Mercer</footer>
+  <main class="card">
+    <img src="profile.jpeg" alt="Christopher Mercer" class="avatar">
+    <h1 class="name">Christopher Mercer</h1>
+    <p class="role">Systems Engineer · Blockchain · AI</p>
+    <p class="bio">Systems thinker working at the confluence of finance, blockchain, and agentic integration. I build protocol infrastructure and AI-augmented development workflows — merging a financial background with distributed systems engineering.</p>
+    <div class="tags">
+      <span class="tag">Protocol Infrastructure</span>
+      <span class="tag">DeFi Architecture</span>
+      <span class="tag">Agentic Workflows</span>
+      <span class="tag">Open-Source Tooling</span>
+    </div>
+    <div class="links">
+      <a href="mailto:contact@whiteb0x.com">Email</a>
+      <span class="sep">&middot;</span>
+      <a href="https://github.com/chris-mercer" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="sep">&middot;</span>
+      <a href="https://linkedin.com/in/c-mercer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="sep">&middot;</span>
+      <a href="https://whiteb0x.com" target="_blank" rel="noopener noreferrer">whiteb0x</a>
+    </div>
+  </main>
+  <footer class="footer">&copy; 2026 Christopher Mercer</footer>
 </body>
 </html>
