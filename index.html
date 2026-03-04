@@ -231,14 +231,25 @@
       margin-bottom: 1.25rem;
     }
 
+    .avatar-link {
+      flex-shrink: 0;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: none;
+    }
+
     .avatar {
       width: 110px;
       height: 110px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid var(--avatar-border);
-      flex-shrink: 0;
+      display: block;
       transition: border-color 0.2s ease;
+    }
+
+    .avatar-link:hover .avatar {
+      border-color: var(--accent);
     }
 
     .hero-text {
@@ -489,7 +500,7 @@
   <div class="surface">
     <section class="hero">
       <div class="hero-header">
-        <img src="profile.jpeg" alt="Christopher Mercer" class="avatar">
+        <a href="#contact" class="avatar-link"><img src="profile.jpeg" alt="Christopher Mercer" class="avatar"></a>
         <div class="hero-text">
           <h1 class="name">Christopher Mercer</h1>
           <p class="role">Systems Architect | Blockchain | Distributed Infrastructure</p>
@@ -533,7 +544,7 @@
       <p class="methodology-text">Security-first methodology: adversarial modeling, formal verification, and fuzz testing are standard practice - not afterthoughts. Traditional finance discipline applied to blockchain engineering: custody isolation, separation of duties, auditability. I build systematic development infrastructure that lets me maintain genuine architectural depth across protocol engineering, smart contracts, and data systems simultaneously.</p>
     </details>
 
-    <section class="surface-section contact">
+    <section id="contact" class="surface-section contact">
       <h2 class="section-title">Get in Touch</h2>
       <a href="mailto:contact@christophermercer.org?subject=Inquiry%20-%20christophermercer.org&body=Name%3A%0ACompany%3A%0ARole%2FTitle%3A%0A%0AType%20of%20Inquiry%20(role%20%2F%20contract%20%2F%20collaboration%20%2F%20other)%3A%0A%0ADetails%3A%0A" class="cta-button">Send an Email</a>
       <div class="secondary-links">
